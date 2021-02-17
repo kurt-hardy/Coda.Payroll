@@ -95,6 +95,7 @@
     <Compile Include="StudentLoans\StudentLoanTests.2017.cs" />
     <Compile Include="StudentLoans\StudentLoanTests.2018.cs" />
     <Compile Include="StudentLoans\StudentLoanTests.2019.cs" />
+    <Compile Include="StudentLoans\StudentLoanTests.2021.cs" />
     <Compile Include="StudentLoans\StudentLoanTests.cs" />
     <Compile Include="TaxCodeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
