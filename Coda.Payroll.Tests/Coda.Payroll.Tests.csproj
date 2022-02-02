@@ -90,6 +90,9 @@
     <Compile Include="PAYE\PayeTests.2021.cs" />
     <Compile Include="PAYE\PayeTests.2021.ScottishRate.cs" />
     <Compile Include="PAYE\PayeTests.2021.WelshRate.cs" />
+    <Compile Include="PAYE\PayeTests.2022.cs" />
+    <Compile Include="PAYE\PayeTests.2022.ScottishRate.cs" />
+    <Compile Include="PAYE\PayeTests.2022.WelshRate.cs" />
     <Compile Include="PAYE\PayeTests.cs" />
     <Compile Include="StatutoryPaternityPayTests2018.cs" />
     <Compile Include="StatutoryMaternityPayTests2018.cs" />
