@@ -1923,11 +1923,11 @@
       "UpperSecondaryThreshold": 50270,
       "ApprenticeUpperSecondaryThreshold": 50270,
 
-      "Plan1StudentLoanThreshold": 19895,
+      "Plan1StudentLoanThreshold": 20195,
       "Plan1StudentLoanRate": 0.09,
       "Plan2StudentLoanThreshold": 27295,
       "Plan2StudentLoanRate": 0.09,
-      "Plan4StudentLoanThreshold": 25000,
+      "Plan4StudentLoanThreshold": 25375,
       "Plan4StudentLoanRate": 0.09,
       "PostGradStudentLoanThreshold": 21000,
       "PostGradStudentLoanRate": 0.06,
