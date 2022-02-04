@@ -74,6 +74,7 @@
     <Compile Include="NI\NiTests.2019.cs" />
     <Compile Include="NI\NiTests.2020.cs" />
     <Compile Include="NI\NiTests.2021.cs" />
+    <Compile Include="NI\NiTests.2022.cs" />
     <Compile Include="NI\NiTests.cs" />
     <Compile Include="PAYE\PayeTests.2013.cs" />
     <Compile Include="PAYE\PayeTests.2014.cs" />
