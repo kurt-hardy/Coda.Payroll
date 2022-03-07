@@ -1916,9 +1916,9 @@
       "TaxYear": 2022,
       "DefaultTaxCode": "1257L",
 
-      "LowerEarningsLimit": 6240,
-      "PrimaryThreshold": 9568,
-      "SecondaryThreshold": 8840,
+      "LowerEarningsLimit": 6396,
+      "PrimaryThreshold": 9880,
+      "SecondaryThreshold": 9100,
       "UpperEarningsLimit": 50270,
       "UpperSecondaryThreshold": 50270,
       "ApprenticeUpperSecondaryThreshold": 50270,
