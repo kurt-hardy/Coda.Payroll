@@ -1940,9 +1940,9 @@
       "PensionAutomaticEnrolment": 10000,
       "PensionUpperThreshold": 50270,
 
-      "StatutorySickPayDayRate": 19.27,
-      "StatutoryMaternityPayDayRate": 21.71,
-      "StatutoryPaternityPayDayRate": 21.71,
+      "StatutorySickPayDayRate": 19.87,
+      "StatutoryMaternityPayDayRate": 22.38,
+      "StatutoryPaternityPayDayRate": 22.38,
       "StatutoryMaternityPay6WeekRatePercentage": 0.9,
 
       "FixedCodes": [
