@@ -6,7 +6,6 @@ using System;
 namespace Coda.Payroll.Calculation.NationalInsurance
 {
     [CalculationEngineTaxYear(TaxYear = 2021)]
-    [CalculationEngineTaxYear(TaxYear = 2022)]
     public class NationalInsurance2021 : NationalInsurance2020
     {
         public NationalInsurance2021(TaxYearConfigurationData taxYearConfigurationData) : base(taxYearConfigurationData)

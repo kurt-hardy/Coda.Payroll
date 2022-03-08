@@ -50,7 +50,8 @@ namespace Coda.Payroll.Calculation.NationalInsurance
             public decimal SecondaryThreshold { get; init; }
             public decimal UpperAccrualPoint { get; init; }
             public decimal UpperEarningsLimit { get; init; }
-            public decimal LowerEarningsLimit { get; init; }
+            public decimal LowerEarningsLimit { get; init; }         
+            public decimal FreeportsUpperSecondaryThreshold { get; init; }
         }
     }
 }

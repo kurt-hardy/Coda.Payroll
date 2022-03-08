@@ -14,7 +14,9 @@ namespace Coda.Payroll.Configuration
         public decimal SecondaryThreshold { get; set; }
         public decimal UpperAccrualPoint { get; set; }
         public decimal UpperSecondaryThreshold { get; set; }
-        public decimal ApprenticeUpperSecondaryThreshold { get; set; }
+        public decimal ApprenticeUpperSecondaryThreshold { get; set; }      
+        public decimal FreeportsUpperSecondaryThreshold { get; set; }
+        public decimal VeteransUpperSecondaryThreshold { get; set; }
         public decimal Plan1StudentLoanThreshold { get; set; }
         public decimal Plan1StudentLoanRate { get; set; }
         public decimal Plan2StudentLoanThreshold { get; set; }

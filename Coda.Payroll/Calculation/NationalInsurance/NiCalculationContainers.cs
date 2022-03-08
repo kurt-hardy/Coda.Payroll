@@ -13,6 +13,9 @@ namespace Coda.Payroll.Calculation.NationalInsurance
         // 2020 - ST < PT
         public decimal EarningsAboveSTUpToIncludingPT { get; set; }
         public decimal EarningsAbovePTUptoIncludingUEL { get; set; }
+        // 2022 - FUST
+        public decimal EarningsAbovePTUptoIncludingFUST { get; set; }
+        public decimal EarningsAboveFUSTUptoIncludingUEL { get; set; }
 
         /// <summary>
         /// Employee National Insurance Gross Value

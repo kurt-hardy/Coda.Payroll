@@ -284,6 +284,51 @@ namespace Coda.Payroll.Tests
             Assert.AreEqual(445.93m, TestShim(4188.54m, niCode, PayPeriods.Monthly, TaxYear));
             Assert.AreEqual(446.08m, TestShim(4189.5m, niCode, PayPeriods.Monthly, TaxYear));
             Assert.AreEqual(446.09m, TestShim(4189.51m, niCode, PayPeriods.Monthly, TaxYear));
+            
+            niCode = 'V';
+            Assert.AreEqual(0m, TestShim(175.03m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(175.04m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(175.1m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(175.11m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(190.04m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(190.05m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(102.9m, TestShim(966.64m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(102.91m, TestShim(966.65m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(103.04m, TestShim(967.5m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(103.05m, TestShim(967.51m, niCode, PayPeriods.Weekly, TaxYear));
+            
+            Assert.AreEqual(0m, TestShim(350.03m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0m, TestShim(350.04m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0m, TestShim(350.1m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0m, TestShim(350.11m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0.02m, TestShim(380.18m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0.02m, TestShim(380.19m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(205.87m, TestShim(1933.72m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(205.87m, TestShim(1933.73m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(205.99m, TestShim(1934.5m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(206m, TestShim(1934.51m, niCode, PayPeriods.Fortnightly, TaxYear));
+            
+            Assert.AreEqual(0m, TestShim(700.03m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(700.04m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(700.1m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(700.11m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(760.12m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0.02m, TestShim(760.13m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(411.63m, TestShim(3866.68m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(411.64m, TestShim(3866.69m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(411.77m, TestShim(3867.5m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(411.78m, TestShim(3867.51m, niCode, PayPeriods.FourWeekly, TaxYear));
+            
+            Assert.AreEqual(0m, TestShim(758.03m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0m, TestShim(758.04m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0m, TestShim(758.17m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0m, TestShim(758.18m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0m, TestShim(823.02m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0m, TestShim(823.03m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(445.93m, TestShim(4188.53m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(445.93m, TestShim(4188.54m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(446.08m, TestShim(4189.5m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(446.09m, TestShim(4189.51m, niCode, PayPeriods.Monthly, TaxYear));
 
             niCode = 'Z';
             Assert.AreEqual(0m, TestShim(175.03m, niCode, PayPeriods.Weekly, TaxYear));
@@ -328,6 +373,188 @@ namespace Coda.Payroll.Tests
             Assert.AreEqual(109.38m, TestShim(4188.53m, niCode, PayPeriods.Monthly, TaxYear));
             Assert.AreEqual(109.38m, TestShim(4188.54m, niCode, PayPeriods.Monthly, TaxYear));
             Assert.AreEqual(109.48m, TestShim(4189.5m, niCode, PayPeriods.Monthly, TaxYear));
+            
+            // New Codes for 2022-23 - F, I, S, L
+            
+            niCode = 'F';
+            Assert.AreEqual(38.56m, TestShim(481.03m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(38.57m, TestShim(481.04m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(38.58m, TestShim(481.1m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(38.59m, TestShim(481.11m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(190.04m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(190.05m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(175.99m, TestShim(966.64m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(176m, TestShim(966.65m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(176.18m, TestShim(967.5m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(176.19m, TestShim(967.51m, niCode, PayPeriods.Weekly, TaxYear));
+            
+            Assert.AreEqual(77.12m, TestShim(962.03m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(77.13m, TestShim(962.04m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(77.14m, TestShim(962.1m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(77.15m, TestShim(962.11m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0.02m, TestShim(380.18m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0.02m, TestShim(380.19m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(352.11m, TestShim(1933.72m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(352.11m, TestShim(1933.73m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(352.28m, TestShim(1934.5m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(352.29m, TestShim(1934.51m, niCode, PayPeriods.Fortnightly, TaxYear));
+            
+            Assert.AreEqual(154.24m, TestShim(1924.04m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(154.25m, TestShim(1924.05m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(154.26m, TestShim(1924.11m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(154.26m, TestShim(1924.12m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(760.12m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0.02m, TestShim(760.13m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(704m, TestShim(3866.68m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(704.01m, TestShim(3866.69m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(704.19m, TestShim(3867.5m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(704.20m, TestShim(3867.51m, niCode, PayPeriods.FourWeekly, TaxYear));
+            
+            Assert.AreEqual(166.97m, TestShim(2083.05m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(166.97m, TestShim(2083.06m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(166.98m, TestShim(2083.11m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(166.98m, TestShim(2083.12m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0m, TestShim(823.02m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0m, TestShim(823.03m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(762.81m, TestShim(4188.53m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(762.81m, TestShim(4188.54m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(763.03m, TestShim(4189.5m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(763.04m, TestShim(4189.51m, niCode, PayPeriods.Monthly, TaxYear));
+            
+            niCode = 'I';
+            Assert.AreEqual(20.66m, TestShim(481.03m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(20.67m, TestShim(481.04m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(20.68m, TestShim(481.1m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(20.69m, TestShim(481.11m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(190.04m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(190.05m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(128.23m, TestShim(966.64m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(128.23m, TestShim(966.65m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(128.40m, TestShim(967.5m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(128.41m, TestShim(967.51m, niCode, PayPeriods.Weekly, TaxYear));
+            
+            Assert.AreEqual(41.32m, TestShim(962.03m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(41.33m, TestShim(962.04m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(41.34m, TestShim(962.1m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(41.35m, TestShim(962.11m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(380.18m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(380.19m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(256.55m, TestShim(1933.72m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(256.55m, TestShim(1933.73m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(256.71m, TestShim(1934.5m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(256.72m, TestShim(1934.51m, niCode, PayPeriods.Fortnightly, TaxYear));
+            
+            Assert.AreEqual(82.66m, TestShim(1924.04m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(82.66m, TestShim(1924.05m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(82.67m, TestShim(1924.11m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(82.67m, TestShim(1924.12m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(760.12m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(760.13m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(512.94m, TestShim(3866.68m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(512.94m, TestShim(3866.69m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(513.11m, TestShim(3867.5m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(513.12m, TestShim(3867.51m, niCode, PayPeriods.FourWeekly, TaxYear));
+            
+            Assert.AreEqual(89.47m, TestShim(2083.05m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(89.47m, TestShim(2083.06m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(89.49m, TestShim(2083.11m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(89.49m, TestShim(2083.12m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0m, TestShim(823.02m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0m, TestShim(823.03m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(555.83m, TestShim(4188.53m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(555.83m, TestShim(4188.54m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(556.03m, TestShim(4189.5m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(556.04m, TestShim(4189.51m, niCode, PayPeriods.Monthly, TaxYear));
+            
+            niCode = 'S';
+            Assert.AreEqual(0m, TestShim(481.03m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(481.04m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(481.1m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0.02m, TestShim(481.11m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(190.04m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(190.05m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(73.09m, TestShim(966.64m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(73.09m, TestShim(966.65m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(73.21m, TestShim(967.5m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(73.22m, TestShim(967.51m, niCode, PayPeriods.Weekly, TaxYear));
+            
+            Assert.AreEqual(0m, TestShim(962.03m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(962.04m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(962.1m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0.02m, TestShim(962.11m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0m, TestShim(380.18m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0m, TestShim(380.19m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(146.24m, TestShim(1933.72m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(146.24m, TestShim(1933.73m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(146.36m, TestShim(1934.5m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(146.37m, TestShim(1934.51m, niCode, PayPeriods.Fortnightly, TaxYear));
+            
+            Assert.AreEqual(0.01m, TestShim(1924.04m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(1924.05m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0.02m, TestShim(1924.11m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0.02m, TestShim(1924.12m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(760.12m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(760.13m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(292.37m, TestShim(3866.68m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(292.37m, TestShim(3866.69m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(292.49m, TestShim(3867.5m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(292.50m, TestShim(3867.51m, niCode, PayPeriods.FourWeekly, TaxYear));
+            
+            Assert.AreEqual(0.01m, TestShim(2083.05m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(2083.06m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0.02m, TestShim(2083.11m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0.02m, TestShim(2083.12m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0m, TestShim(823.02m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0m, TestShim(823.03m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(316.88m, TestShim(4188.53m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(316.88m, TestShim(4188.54m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(317.02m, TestShim(4189.5m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(317.03m, TestShim(4189.51m, niCode, PayPeriods.Monthly, TaxYear));
+            
+            niCode = 'L';
+            Assert.AreEqual(9.46m, TestShim(481.03m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(9.47m, TestShim(481.04m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(9.47m, TestShim(481.1m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(9.48m, TestShim(481.11m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(190.04m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(190.05m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(98.33m, TestShim(966.64m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(98.33m, TestShim(966.65m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(98.48m, TestShim(967.5m, niCode, PayPeriods.Weekly, TaxYear));
+            Assert.AreEqual(98.49m, TestShim(967.51m, niCode, PayPeriods.Weekly, TaxYear));
+            
+            Assert.AreEqual(18.91m, TestShim(962.03m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(18.93m, TestShim(962.04m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(18.93m, TestShim(962.1m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(18.94m, TestShim(962.11m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0m, TestShim(380.18m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(0.01m, TestShim(380.19m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(196.73m, TestShim(1933.72m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(196.74m, TestShim(1933.73m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(196.88m, TestShim(1934.5m, niCode, PayPeriods.Fortnightly, TaxYear));
+            Assert.AreEqual(196.89m, TestShim(1934.51m, niCode, PayPeriods.Fortnightly, TaxYear));
+            
+            Assert.AreEqual(37.84m, TestShim(1924.04m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(37.84m, TestShim(1924.05m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(37.85m, TestShim(1924.11m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(37.85m, TestShim(1924.12m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(760.12m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(0m, TestShim(760.13m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(393.34m, TestShim(3866.68m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(393.34m, TestShim(3866.69m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(393.49m, TestShim(3867.5m, niCode, PayPeriods.FourWeekly, TaxYear));
+            Assert.AreEqual(393.50m, TestShim(3867.51m, niCode, PayPeriods.FourWeekly, TaxYear));
+            
+            Assert.AreEqual(40.96m, TestShim(2083.05m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(40.96m, TestShim(2083.06m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(40.97m, TestShim(2083.11m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(40.97m, TestShim(2083.12m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0m, TestShim(823.02m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(0m, TestShim(823.03m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(426.26m, TestShim(4188.53m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(426.26m, TestShim(4188.54m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(426.43m, TestShim(4189.5m, niCode, PayPeriods.Monthly, TaxYear));
+            Assert.AreEqual(426.44m, TestShim(4189.51m, niCode, PayPeriods.Monthly, TaxYear));
 
             // X Codes
             niCode = 'X';
